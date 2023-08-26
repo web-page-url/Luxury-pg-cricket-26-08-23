@@ -3,18 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket</title>
+    <title>Cricket Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: backgroundLoop 20s infinite alternate;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .center {
+            display: block;
+            margin: 20px auto;
+            animation: imageLoop 15s infinite alternate;
+        }
+
+        @keyframes backgroundLoop {
+            0% {
+                background-color: #f4f4f4;
+            }
+            100% {
+                background-color: #b2d8d8;
+            }
+        }
+
+        @keyframes imageLoop {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
 </head>
 <body>
-    
-    <h1 style="text-align: center;">Hello All.</h1>
-    <h2 style="text-align: center;">We are Planning to Play Cricket Today at 5 PM.</h2>
+    <h1>Hello All.</h1>
+    <h2>We are Planning to Play Cricket Today at 5 PM.</h2>
+    <h2>Those Who Want To Play Can Join Us</h2>
+    <h2>Let us Know Who are Interested.</h2>
+    <h3>You can react + to show your Interest.</h3>
 
-    <h2 style="text-align: center;">Those Who Wants To Play Can Join Us</h2>
-
-    <h2 style="text-align: center;">Let me Know Who are the People Interested. </h2>
-
-    <h3 style="text-align: center;">You can react + to show your Interest </h3>
-    
+    <img src="bat.jpg" alt="Cricket Bat" height="300" width="" class="center">
 </body>
 </html>
